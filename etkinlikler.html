@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etkinlikler | Kampüs Kulübü</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header><div class="brand">Kampüs Kulübü</div><nav aria-label="Ana menü"><a href="index.html">Ana Sayfa</a>
@@ -12,7 +13,16 @@
 <a href="hakkimizda.html">Hakkımızda</a></nav></header>
 <main><p class="eyebrow">KAMPÜS KULÜBÜ</p><h1>Etkinlik takvimi</h1>
 <p class="intro">İlk projen için üç buluşma. Aşağıdaki kayıtlar eğitim amacıyla hazırlanmış örnek verilerdir.</p>
-<section class="grid" aria-label="Örnek etkinlikler">
+<div class="event-search">
+  <label for="event-search-input">Etkinlik başlığına göre ara</label>
+  <div class="event-search-controls">
+    <input id="event-search-input" type="search" autocomplete="off">
+    <button id="event-search-clear" type="button">Temizle</button>
+  </div>
+  <p id="event-search-count" class="event-search-count" aria-live="polite"></p>
+  <p id="event-search-empty" class="event-search-empty" role="status" hidden>Aramanızla eşleşen etkinlik bulunamadı.</p>
+</div>
+<section id="event-list" class="grid" aria-label="Örnek etkinlikler">
 <article><p class="meta">12 KASIM / 14.00</p><h2>HTML Atölyesi</h2><p>Başlık, paragraf ve linklerle ilk sayfanı oluştur.</p><p>Yer: Bilgisayar Laboratuvarı</p></article>
 <article><p class="meta">19 KASIM / 14.00</p><h2>CSS Tasarım Saati</h2><p>Renkleri, boşlukları ve sayfa düzenini keşfet.</p><p>Yer: Bilgisayar Laboratuvarı</p></article>
 <article><p class="meta">26 KASIM / 14.00</p><h2>Copilot ile Kod Okuma</h2><p>Kodunu açıklat, küçük bir değişiklik yap ve sonucu dene.</p><p>Yer: Çevrim içi buluşma</p></article>
