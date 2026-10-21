@@ -12,6 +12,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 48px 24px; min-height: 65vh; 
 .eyebrow { color: #087d70; font-weight: bold; letter-spacing: 2px; font-size: 14px; }
 h1 { font-size: clamp(34px, 5vw, 60px); line-height: 1.12; max-width: 850px; margin: 20px 0; }
 .intro { font-size: 21px; max-width: 730px; color: #496272; }
+.event-search { max-width: 520px; margin-top: 32px; }
+.event-search label { display: block; margin-bottom: 8px; font-weight: bold; }
+.event-search-controls { display: flex; flex-wrap: wrap; gap: 10px; }
+.event-search input { flex: 1 1 240px; min-width: 0; padding: 11px 12px; border: 1px solid #9aadb8; border-radius: 6px; font: inherit; }
+.event-search button { padding: 11px 18px; border: 0; border-radius: 6px; background: #087d70; color: white; font: inherit; font-weight: bold; cursor: pointer; }
+.event-search input:focus-visible, .event-search button:focus-visible { outline: 3px solid #e1a82b; outline-offset: 3px; }
+.event-search-count, .event-search-empty { margin: 10px 0 0; color: #496272; }
+.event-search-empty { color: #8a351c; font-weight: bold; }
 .button { display: inline-block; margin: 16px 0 32px; padding: 13px 24px; background: #087d70; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 32px; }
 article { background: white; border-top: 4px solid #087d70; padding: 25px; border-radius: 6px; }
